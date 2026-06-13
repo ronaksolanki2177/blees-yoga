@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import akshayPhoto from "../assets/akshay.jpeg"
+import akshayPhoto from "../assets/akshay2.jpeg"
 import { 
   Instagram, 
   MessageSquare, 
