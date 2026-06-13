@@ -772,25 +772,35 @@ export default function App() {
         {/* About Lead Instructor Akshay Chotara */}
         <section id="about-section" className="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
           <div className="space-y-12">
-            <div className="text-center space-y-4 max-w-3xl mx-auto mb-12">
-              <span className="text-xs font-bold tracking-[0.25em] text-gold uppercase block">LEAD TEACHER</span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal font-semibold tracking-tight">
-                Meet <span className="italic font-normal text-gold">{instructorProfile.name}</span>
-              </h2>
-              <p className="text-sm sm:text-base text-charcoal-light leading-relaxed max-w-xl mx-auto font-light">
-                Learn the philosophy, intention, and path guiding physical alignment and breath transformation.
-              </p>
-            </div>
-
-            {/* Banner Block with Yogi representing Instructor */}
             <div className="flex justify-center">
-  <div className="w-75 h-99 flex justify-end">
-  <img
-    src={akshayPhoto}
-    alt="Akshay"
-    className="w-99 object-cover rounded-xl"
-  />
-</div>
+  <div className="relative w-[470px] h-[520px]">
+    
+    {/* Background Image */}
+    <img
+      src={akshayPhoto}
+      alt="Instructor"
+      className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+    />
+
+    {/* Content */}
+    <div className="relative z-10 flex flex-col items-center justify-start h-full pt-8">
+      <span className="text-xs font-bold tracking-[0.25em] text-gold uppercase">
+        LEAD TEACHER
+      </span>
+
+      <h2 className="text-3xl sm:text-4xl font-serif text-charcoal font-semibold">
+        Meet <span className="italic font-normal text-gold">
+          {instructorProfile.name}
+        </span>
+      </h2>
+
+      <p className="text-center mt-3 text-charcoal-light px-4">
+        Learn the philosophy, intention, and path guiding physical alignment and
+        breath transformation.
+      </p>
+    </div>
+
+  </div>
 </div>
 
             {/* Detailed Philosophy Copy */}
